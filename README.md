@@ -16,31 +16,31 @@ As instruções a serem implementadas são as do conjunto RV32I, que é parte of
 | 4 | `ADD`     |     ✅     |   ✅   |     ✅     |
 | 5 | `AND`     |     ✅     |   ✅   |     ✅     |
 
-Seu objetivo é implementar as instruções restantes listadas abaixo:
+Instruções implementadas listadas abaixo:
 
 | # | Instrução | Implementada | Testada | Funcionando |
 |---|-----------|:-----------:|:-------:|:-----------:|
-| 1  | `JAL`     |      ❌     |    ❌    |      ❌      |
-| 2  | `JALR`    |      ❌     |    ❌    |      ❌      |
-| 3  | `BNE`     |      ❌     |    ❌    |      ❌      |
-| 4  | `BLT`     |      ❌     |    ❌    |      ❌      |
-| 5  | `BGE`     |      ❌     |    ❌    |      ❌      |
-| 6  | `LB`      |      ❌     |    ❌    |      ❌      |
-| 7  | `LH`      |      ❌     |    ❌    |      ❌      |
-| 8  | `LBU`     |      ❌     |    ❌    |      ❌      |
-| 9  | `SB`      |      ❌     |    ❌    |      ❌      |
-| 10 | `SH`      |      ❌     |    ❌    |      ❌      |
-| 11 | `SLTI`    |      ❌     |    ❌    |      ❌      |
-| 12 | `ADDI`    |      ❌     |    ❌    |      ❌      |
-| 13 | `SLLI`    |      ❌     |    ❌    |      ❌      |
-| 14 | `SRLI`    |      ❌     |    ❌    |      ❌      |
-| 15 | `SRAI`    |      ❌     |    ❌    |      ❌      |
-| 16 | `SUB`     |      ❌     |    ❌    |      ❌      |
-| 17 | `SLT`     |      ❌     |    ❌    |      ❌      |
-| 18 | `XOR`     |      ❌     |    ❌    |      ❌      |
-| 19 | `OR`      |      ❌     |    ❌    |      ❌      |
-| 20 | `LUI`     |      ❌     |    ❌    |      ❌      |
-| 21 | `HALT`    |      ❌     |    ❌    |      ❌      |
+| 1  | `JAL`     |      ✅     |   ✅   |     ✅     |
+| 2  | `JALR`    |      ✅     |   ✅   |     ✅     |
+| 3  | `BNE`     |      ✅     |   ✅   |     ✅     |
+| 4  | `BLT`     |      ✅     |   ✅   |     ✅     |
+| 5  | `BGE`     |      ✅     |   ✅   |     ✅     |
+| 6  | `LB`      |      ✅     |   ✅   |     ✅     |
+| 7  | `LH`      |      ✅     |   ✅   |     ✅     |
+| 8  | `LBU`     |      ✅     |   ✅   |     ✅     |
+| 9  | `SB`      |      ✅     |   ✅   |     ✅     |
+| 10 | `SH`      |      ✅     |   ✅   |     ✅     |
+| 11 | `SLTI`    |      ✅     |   ✅   |     ✅     |
+| 12 | `ADDI`    |      ✅     |   ✅   |     ✅     |
+| 13 | `SLLI`    |      ✅     |   ✅   |     ✅     |
+| 14 | `SRLI`    |      ✅     |   ✅   |     ✅     |
+| 15 | `SRAI`    |      ✅     |   ✅   |     ✅     |
+| 16 | `SUB`     |      ✅     |   ✅   |     ✅     |
+| 17 | `SLT`     |      ✅     |   ✅   |     ✅     |
+| 18 | `XOR`     |      ✅     |   ✅   |     ✅     |
+| 19 | `OR`      |      ✅     |   ✅   |     ✅     |
+| 20 | `LUI`     |      ✅     |   ✅   |     ✅     |
+| 21 | `HALT`    |      ✅     |   ✅   |     ✅     |
 
 Você tem permissão para modificar a implementação do processador como desejar (por exemplo, incluir fios, alterar tamanhos, modificar sinais, remover ou adicionar módulos, etc.), desde que o resultado final continue funcionando como um pipeline e produza os resultados corretos.
 
@@ -63,25 +63,3 @@ O repositório está organizado da seguinte forma:
   - Compare seus resultados com os exemplos fornecidos em [`sim`](/sim)
   - Utilize o simulador CompSim
   - Utilize o [RISC-V Interpreter, by Cornell University](https://www.cs.cornell.edu/courses/cs3410/2019sp/riscv/interpreter/)
-
-## 📦 Entrega
-
-A data de entrega do projeto será especificada no Classroom, assim como a quantidade de pessoas por grupo.
-
-### Modelo de entrega
-
-A entrega consiste em um relatório seguindo o modelo disponível [aqui](https://docs.google.com/document/d/116sukTXOizb0bplubUOHhdNBqpwtk3cR4Dwaqg-TO7I/edit?usp=sharing). Não deve ser extenso, mas precisa conter todas as informações descritas para a avaliação do projeto.
-
-### Avaliação
-
-A avaliação do projeto será baseada na implementação correta das instruções, nos testes realizados e no funcionamento adequado do processador.
-
-## 🐛 Encontrou um bug ou pensou numa melhoria?
-
-Encorajamos os alunos a procurarem por bugs e sugerirem melhorias para o projeto, visando aperfeiçoá-lo para as próximas edições da disciplina. Se você identificou algum bug ou possui uma ideia para melhorar o projeto, ficaremos felizes em receber sua contribuição!
-
-Existem duas maneiras de nos enviar suas sugestões:
-
-1. **Issue**: Abra uma issue detalhando o problema ou a melhoria proposta. Certifique-se de fornecer informações claras e específicas para facilitar a compreensão do que precisa ser corrigido ou aprimorado.
-
-2. **Pull Request**: Se você é familiarizado com o processo de pull requests, sinta-se à vontade para enviar suas alterações diretamente por meio de um pull request. Certifique-se de descrever claramente as alterações realizadas e o motivo por trás delas.
