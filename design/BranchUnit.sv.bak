@@ -18,7 +18,7 @@ module BranchUnit #(
 
   logic Branch_Sel;
   logic [31:0] PC_Full;
-  logic Halt_sel;
+  logi Halt_sel;
 
   assign PC_Full = {23'b0, Cur_PC};
 
